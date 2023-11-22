@@ -16,7 +16,7 @@ public class BinarySearchTree {
                 }else if(data > tmp.data){
                     tmp = tmp.right;
                 }
-                
+            }
                 if(data < parent.data){
                     parent.left = newNode;
                 }else if(data > parent.data){
@@ -24,7 +24,6 @@ public class BinarySearchTree {
                 }
             }
         }
-    }
     
     public void preOrder(Node root){
         if(root != null){
